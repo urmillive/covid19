@@ -1,0 +1,71 @@
+Main Modules or Branches of Project
+
+#Client Side
+-Live Data Fetch using Open API
+-Questions Test
+-Blogs
+-Suggestions
+-Contribution
+-About
+-Contact
+
+#admin Side
+-Handle Users
+-Handle Questions-Answers on Questions Test
+-Handle Contribution Forms
+-Handle Suggestions
+-Handle Contacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="bg-tagline" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-12 order-lg-1 mt-5 order-1">
+                <!-- head text -->
+                <div class="leftside justify-content-center">
+                    <h5 class="head-text text-center">Let's Stay Safe & Fight Together Against Cor<span><img src="./images/corona-text.png" alt="" height="50" width="50"></span>na Virus</h5>
+                </div>
+                <!-- head text end -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-2 col-sm-12 order-lg-1 order-1 mt-5">
+                <!-- virus img -->
+                <div class="rightside">
+                    <img src="./images/virus.jpg" id="virus_img" alt="" height="100%" width="370">
+                </div>
+                <!-- virus img end -->
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-12 order-lg-2 order-2">
+                <!-- Jumbotron Start -->
+                <div class="jumbotron bg-white text-black text-center col-12 my-5">
+                    <h1 class="display-4 head-text">Covid-19 Awareness</h1>
+                    <p class="lead">Must Check your symptoms on This Corona Debate</p>
+                    <hr class="my-4 bg-dark">
+                    <p>Need Social Distancing & Use Masks.</p>
+                    <a class="btn btn-warning btn-lg" href="questions.php" role="button">Symptom Checker</a>
+                </div>
+                <!-- Jumbotron End -->
+            </div>
+        </div>
+    </div>
