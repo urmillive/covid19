@@ -7,17 +7,17 @@ if (!isset($_SESSION['username'])) {
 <?php
 if (isset($_POST['contact'])) {
 
-     $name = $_POST['name'];
-     $email = $_POST['email'];
-     $mobile = $_POST['mobile'];
-     $reason = $_POST['reason'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $mobile = $_POST['mobile'];
+    $reason = $_POST['reason'];
 
     //  Real Escape Streing
 
-     $name = mysqli_real_escape_string($conn,$name);
-     $email = mysqli_real_escape_string($conn,$email);
-     $mobile = mysqli_real_escape_string($conn,$mobile);
-     $reason = mysqli_real_escape_string($conn,$reason);
+    $name = mysqli_real_escape_string($conn, $name);
+    $email = mysqli_real_escape_string($conn, $email);
+    $mobile = mysqli_real_escape_string($conn, $mobile);
+    $reason = mysqli_real_escape_string($conn, $reason);
 
     if ($name == '' || $email == '' || $mobile == '' || $reason == '') {
         echo "Please Enter All Data!";
@@ -35,9 +35,9 @@ if (isset($_POST['contact'])) {
 
 ?>
 
-
+<link rel="stylesheet" href="css/contact.css">
 <div class="imgbox">
-    <img id="contact-img" src="./images/contact" alt="Stay Safe" >
+    <img id="contact-img" src="./images/svg/" alt="Stay Safe">
 </div>
 
 <div class="container text-center my-5">

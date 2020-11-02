@@ -58,7 +58,7 @@ include "config.php";
                     <a class="nav-link" href="./questions.php">Symptom-Checker</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./dailycases.php">Today's-live</a>
+                    <a class="nav-link" href="./dailycases.php">India Today</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./indiacases.php">India-Daily</a>
@@ -70,7 +70,7 @@ include "config.php";
                     <a class="nav-link" href="./blogs.php">Blogs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./about.php">About</a>
+                    <a class="nav-link" href="./about.php">About Me</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

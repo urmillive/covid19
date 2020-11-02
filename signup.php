@@ -39,7 +39,7 @@ if (isset($_POST['isignup'])) {
 
 ?>
 <div class="imgbox">
-    <img id="staysafe-img" src="./images/stay-safe.svg" alt="Stay Safe" >
+    <img id="staysafe-img" src="./images/svg/stay-safe.svg" alt="Stay Safe" >
 </div>
 <link rel="stylesheet" href="css/signup.css">
 <!-- Login Form -->

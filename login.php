@@ -34,7 +34,7 @@ if (isset($_POST['ilogin'])) {
 ?>
 <link rel="stylesheet" href="css/login.css">
 <div class="imgbox">
-    <img id="staysafe-img" src="./images/stay-safe.svg" alt="Stay Safe">
+    <img id="staysafe-img" src="./images/svg/stay-safe.svg" alt="Stay Safe">
 </div>
 <!-- Login Form -->
 <form class="box" action="login.php" method="post">
