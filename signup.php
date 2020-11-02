@@ -3,16 +3,16 @@ require "config.php";
 include "header.php";
 
 if (isset($_POST['isignup'])) {
-	
+
 	$name = $_POST['fullname'];
 	$mobile = $_POST['mobile'];
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 
-	$name=  mysqli_real_escape_string($conn,$mobile);
-	$mobile = mysqli_real_escape_string($conn,$mobile);
-	$username = mysqli_real_escape_string($conn,$username);
-	$password = mysqli_real_escape_string($conn,$password);
+	$name =  mysqli_real_escape_string($conn, $mobile);
+	$mobile = mysqli_real_escape_string($conn, $mobile);
+	$username = mysqli_real_escape_string($conn, $username);
+	$password = mysqli_real_escape_string($conn, $password);
 
 	if ($name == "" || $mobile == "" || $username == "" || $password == "") {
 		$_SESSION['error'] = "Please Enter valid Data";
@@ -39,18 +39,18 @@ if (isset($_POST['isignup'])) {
 
 ?>
 <div class="imgbox">
-    <img id="staysafe-img" src="./images/svg/stay-safe.svg" alt="Stay Safe" >
+	<img id="staysafe-img" src="./images/svg/stay-safe.svg" alt="Stay Safe">
 </div>
 <link rel="stylesheet" href="css/signup.css">
 <!-- Login Form -->
 <form class="box" action="signup.php" method="post">
-  <h1>Signup</h1>
-  <input type="text" name="fullname" placeholder="Name">
-  <input type="text" name="mobile" placeholder="mobile">
-  <input type="text" name="username" placeholder="Username">
-  <input type="password" name="password" placeholder="Password">
-  <input type="submit" name="isignup" value="Signup">
-  <p class="alt-txt">Already User ? <a id="alt-txt" href="login.php">Login</a></p>
+	<h1>Signup</h1>
+	<input type="text" name="fullname" placeholder="Name">
+	<input type="text" name="mobile" placeholder="mobile">
+	<input type="text" name="username" placeholder="Username">
+	<input type="password" name="password" placeholder="Password">
+	<input type="submit" name="isignup" value="Signup">
+	<p class="alt-txt">Already User ? <a id="alt-txt" href="login.php">Login</a></p>
 </form>
 
 <?php include "footer.php"; ?>

@@ -35,59 +35,61 @@ if (isset($_POST['contact'])) {
 
 ?>
 
-<link rel="stylesheet" href="css/contact.css">
-<div class="imgbox">
-    <img id="contact-img" src="./images/svg/" alt="Stay Safe">
-</div>
-
 <div class="container text-center my-5">
-    <form class="needs-validation" novalidate method="post" action="contactus.php">
-        <div class="form-row">
-            <div class="col-md-12 mb-3">
-                <label for="validationCustom01">Name</label>
-                <input type="text" name="name" class="form-control" id="validationCustom01" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-            </div>
-            <div class="col-md-12 mb-3">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-            </div>
-        </div>
-        <!--reason  -->
+    <div class="row">
+        <!-- <div class="col-md-6">
+            <img class="img-fluid" id="" src="./images/svg/contact.svg" alt="Contact me">
+        </div> -->
 
-        <div class="form-row">
-            <div class="col-md-12 mb-3">
-                <label for="validationCustom01">Mobile</label>
-                <input type="text" name="mobile" class="form-control" id="validationCustom01" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-            </div>
-            <div class="col-md-12 mb-3">
-                <div class="form-group green-border-focus">
-                    <label for="exampleFormControlTextarea5">Project Details</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea5" name="reason" rows="3" required></textarea>
-                </div>
-            </div>
+        <div class="col-lg-6">
+            <img class="img-fluid" id="" src="./images/svg/contact.svg" alt="Contact me">
         </div>
-        <!-- //reason -->
-        <div class="form-group">
-            <div class="form-check custom-control custom-checkbox form-check">
-                <input class="form-check-input custom-control-input" type="checkbox" id="invalidCheck" required>
-                <label class="custom-control-label" for="invalidCheck">
-                    Agree to terms and conditions
-                </label>
-            </div>
-            <div class="invalid-feedback">
-                You must agree before submitting.
-            </div>
+        
+        <div class="col-lg-6">
+            <form class="needs-validation" novalidate method="post" action="contactus.php">
+                <div class="form-group">
+                    <div class="col-md-12 mb-3">
+                        <label for="validationCustom01">Name</label>
+                        <input type="text" name="name" class="form-control" id="validationCustom01" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="validationCustom01">Mobile</label>
+                        <input type="text" name="mobile" class="form-control" id="validationCustom01" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="form-group green-border-focus">
+                            <label for="exampleFormControlTextarea5">Project Details</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea5" name="reason" rows="3" required></textarea>
+                        </div>
+                    </div>
+                    <!-- </div>
+                <div class="form-group"> -->
+                    <div class="form-check custom-control custom-checkbox form-check">
+                        <input class="form-check-input custom-control-input" type="checkbox" id="invalidCheck" required>
+                        <label class="custom-control-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                    </div>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+                <button class="btn btn-primary" name="contact" type="submit">Submit</button>
+            </form>
         </div>
-        <button class="btn btn-primary" name="contact" type="submit">Submit</button>
+    </div>
 </div>
-</form>
-</div>
+<!-- </div> -->
 
 <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
