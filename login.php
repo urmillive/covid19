@@ -34,15 +34,22 @@ if (isset($_POST['ilogin'])) {
 ?>
 
 <link rel="stylesheet" href="css/login.css">
-<div class="imgbox">
-    <img id="staysafe-img" src="./images/svg/stay-safe.svg" alt="Stay Safe">
+<div class="row">
+    <div class="col-lg-6">
+        <img class="img-fluid" id="staysafe-img" src="./images/svg/stay-safe.svg" alt="Stay Safe">
+    </div>
+    <div class="col-lg-6">
+
+        <!-- Login Form -->
+        <form class="box" action="login.php" method="post">
+            <h1>Login</h1>
+            <input type="text" name="username" placeholder="Username" require>
+            <input type="password" name="password" placeholder="Password" require>
+            <input type="submit" name="ilogin" value="Login">
+            <p class="alt-txt">New User ? Go to <a id="alt-txt" href="signup.php">SignUp</a></p>
+        </form>
+    </div>
 </div>
-<!-- Login Form -->
-<form class="box" action="login.php" method="post">
-    <h1>Login</h1>
-    <input type="text" name="username" placeholder="Username" require>
-    <input type="password" name="password" placeholder="Password" require>
-    <input type="submit" name="ilogin" value="Login">
-    <p class="alt-txt">New User ? Go to <a id="alt-txt" href="signup.php">SignUp</a></p>
-</form>
+
+
 <?php include "./footer.php"; ?>

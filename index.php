@@ -67,7 +67,7 @@ if (!isset($_SESSION['username'])) {
 
                 <div class="col-lg-4 col-md-4 col-12 mt-5">
                     <figure class="text-center">
-                        <img src="./images/symptoms/cold.jpg" class="img-fluid" alt="" height="120" width="120">
+                        <img src="./images/symptoms/cold.png" class="img-fluid" alt="" height="120" width="120">
                         <figcaption>Cold</figcaption>
                     </figure>
                 </div>

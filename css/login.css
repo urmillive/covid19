@@ -16,9 +16,9 @@ body {
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {
 }
 
-#staysafe-img {
+/* #staysafe-img {
   width: 50%;
-}
+} */
 
 #alt-txt {
   color: crimson;
