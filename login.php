@@ -36,10 +36,9 @@ if (isset($_POST['ilogin'])) {
 <link rel="stylesheet" href="css/login.css">
 <div class="row">
     <div class="col-lg-6">
-        <img class="img-fluid" id="staysafe-img" src="./images/svg/stay-safe.svg" alt="Stay Safe">
+        <img class="img-fluid w-100" src="./images/svg/stay-safe.svg" alt="Stay Safe">
     </div>
     <div class="col-lg-6">
-
         <!-- Login Form -->
         <form class="box" action="login.php" method="post">
             <h1>Login</h1>
