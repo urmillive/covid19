@@ -9,7 +9,7 @@ if (!isset($_SESSION['username'])) {
 
     <!--Tag line section-->
     <div id="bg-tagline" class="container-fluid">
-        <img src="images/main-bg.jpg" height="50%" width="50%" alt="">
+        <img src="images/svg/" height="50%" width="50%" alt="">
     </div>
     <!--tagline section end-->
     <!-- About Section -->
@@ -182,7 +182,6 @@ if (!isset($_SESSION['username'])) {
         <!-- Prevention Section End-->
     </div>
 
-    
 
 
 
@@ -191,8 +190,9 @@ if (!isset($_SESSION['username'])) {
 
 
 
-    <?php
+
+<?php
 }
-    ?>
+?>
 
-    <?php include "footer.php"; ?>
+<?php include "footer.php"; ?>

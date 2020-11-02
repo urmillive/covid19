@@ -35,7 +35,7 @@ if (isset($_POST['contact'])) {
 
 ?>
 
-<div class="container text-center my-5">
+<div class="container-fluid text-center my-5">
     <div class="row">
         <!-- <div class="col-md-6">
             <img class="img-fluid" id="" src="./images/svg/contact.svg" alt="Contact me">
