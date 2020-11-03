@@ -15,11 +15,11 @@ body {
 
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {
   .box {
-    width: 280px;
+    width: 400px;
     padding: 40px;
     position: absolute;
     top: 50%;
-    left: 70%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background: #191919;
     text-align: center;
@@ -37,11 +37,11 @@ body {
 }
 
 .box {
-  width: 280px;
+  width: 400px;
   padding: 40px;
   position: absolute;
   top: 50%;
-  left: 70%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background: #191919;
   text-align: center;

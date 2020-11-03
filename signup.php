@@ -38,19 +38,26 @@ if (isset($_POST['isignup'])) {
 }
 
 ?>
-<div class="imgbox">
-	<img id="staysafe-img" src="./images/svg/stay-safe.svg" alt="Stay Safe">
+
+
+<link rel="stylesheet" href="css/login.css">
+<div class="row">
+	<div class="col-lg-6">
+		<img class="img-fluid w-100" src="./images/svg/stay-safe.svg" alt="Stay Safe">
+	</div>
+	<div class="col-lg-6">
+		<!-- Login Form -->
+		<form class="box" action="signup.php" method="post">
+			<h1>Signup</h1>
+			<input type="text" name="fullname" placeholder="Name">
+			<input type="text" name="mobile" placeholder="mobile">
+			<input type="text" name="username" placeholder="Username">
+			<input type="password" name="password" placeholder="Password">
+			<input type="submit" name="isignup" value="Signup">
+			<p class="alt-txt">Already User ? <a id="alt-txt" href="login.php">Login</a></p>
+		</form>
+
+	</div>
 </div>
-<link rel="stylesheet" href="css/signup.css">
-<!-- Login Form -->
-<form class="box" action="signup.php" method="post">
-	<h1>Signup</h1>
-	<input type="text" name="fullname" placeholder="Name">
-	<input type="text" name="mobile" placeholder="mobile">
-	<input type="text" name="username" placeholder="Username">
-	<input type="password" name="password" placeholder="Password">
-	<input type="submit" name="isignup" value="Signup">
-	<p class="alt-txt">Already User ? <a id="alt-txt" href="login.php">Login</a></p>
-</form>
 
 <?php include "footer.php"; ?>
