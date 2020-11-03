@@ -29,6 +29,9 @@ include "config.php";
     <!-- Jquery Alert -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
 
+	<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
     <!-- Favicon -->
     <link rel="icon" href="images/covid-favicon.png" type="image/x-icon">
 

@@ -5,12 +5,34 @@ if (!isset($_SESSION['username'])) {
     header('location:signup.php');
 } else {
 ?>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/top.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+
+
+    <div class="hero-v1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mr-auto text-center text-lg-left">
+                    <span class="d-block subheading">Covid-19 Awareness</span>
+                    <h1 class="heading mb-3">Stay Safe. Stay Home.</h1>
+                    <p class="mb-5">Social distancing is the best medicine for Corona.</p>
+                    <p class="mb-4"><a href="#" class="btn btn-primary">How to prevent</a></p>
+                </div>
+                <div class="col-lg-6">
+                    <figure class="illustration">
+                        <img src="images/illustration.png" alt="Image" class="img-fluid">
+                    </figure>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+        </div>
+    </div>
+
 
     <!--Tag line section-->
-    <div id="bg-tagline" class="container-fluid">
-        <img src="images/svg/" height="50%" width="50%" alt="">
-    </div>
+
     <!--tagline section end-->
     <!-- About Section -->
     <div id="bg-about" class="container-fluid text-white py-5">
