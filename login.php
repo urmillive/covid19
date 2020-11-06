@@ -1,12 +1,11 @@
 <?php
 
 include "config.php";
-include "header.php";
 
 if (isset($_POST['ilogin'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
-
+    
     $username = mysqli_real_escape_string($conn, $username);
     $password = mysqli_real_escape_string($conn, $password);
 
@@ -17,7 +16,7 @@ if (isset($_POST['ilogin'])) {
     } else {
         $query = "SELECT * FROM `client_signup` WHERE `username` ='$username' && `password` = '$password'";
         $result = mysqli_query($conn, $query);
-
+        
         if ($row = mysqli_fetch_assoc($result)) {
             $_SESSION["username"] = $row["username"];
             $_SESSION['success'] = "login Successfully Done";
@@ -32,7 +31,7 @@ if (isset($_POST['ilogin'])) {
 }
 
 ?>
-
+<?php include "header.php"; ?>
 <link rel="stylesheet" href="css/login.css">
 <div class="row">
     <div class="col-lg-6">
