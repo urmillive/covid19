@@ -1,7 +1,6 @@
 <?php include "config.php"; ?>
 <?php
-if(!isset($_SESSION['username']))
-{
+if (!isset($_SESSION['username'])) {
     header('location:signup.php');
 }
 ?>
@@ -30,7 +29,7 @@ $totalcase = count($coronadata['statewise']);
                 $i = 1;
                 while ($i < $totalcase) {
                 ?>
-                    <tr>        
+                    <tr>
                         <td class="text-center"><?php echo $coronadata['statewise'][$i]['lastupdatedtime'] ?></td>
                         <td class="text-center"><?php echo $coronadata['statewise'][$i]['state'] ?></td>
                         <td class="text-center"><?php echo $coronadata['statewise'][$i]['confirmed'] ?></td>
@@ -47,3 +46,5 @@ $totalcase = count($coronadata['statewise']);
         </table>
     </div>
 </div>
+
+<?php include "footer.php"; ?>

@@ -1,7 +1,13 @@
 # Covid19 Awareness
 My Final Year Collage Project about Covid-19(Corona)
 Live Data Fetch using Open API
-Show Live Corona Cases
+Show Live Corona Cases and Aware peoples
+
+# Thanks You
+
+https://api.covid19india.org
+
+https://pomber.github.io/covid19/timeseries.json
 
 
 For More my Website https://urmil8989.online/

@@ -69,3 +69,5 @@ if(!isset($_SESSION['username']))
         </table>
     </div>
 </section>
+
+<?php include "footer.php"; ?>
