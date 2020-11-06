@@ -1,4 +1,4 @@
-<?php include "header.php"; ?>
+<?php include "config.php"; ?>
 <?php
 if(!isset($_SESSION['username']))
 {
@@ -6,6 +6,7 @@ if(!isset($_SESSION['username']))
 }
 ?>
 
+<?php include "header.php"; ?>
 <section class="corona_update container-fluid">
     <div class="my-3">
         <h3 class="text-uppercase text-center head-text">Covid-19 Live Daily Updates India</h3>

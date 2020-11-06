@@ -1,4 +1,4 @@
-<?php include "header.php"; ?>
+<?php include "config.php"; ?>
 <?php
 if (!isset($_SESSION['username'])) {
     header('location:signup.php');
@@ -8,10 +8,10 @@ if (!isset($_SESSION['username'])) {
 <?php
 
 if (isset($_POST['post'])) {
-
+    
     $sname = $_SESSION['username'];
     $comment = $_POST['comment'];
-
+    
     // Real Escape String
     $comment = mysqli_real_escape_string($conn, $comment);
     $sname = mysqli_real_escape_string($conn, $sname);
@@ -26,6 +26,7 @@ $query = "SELECT * FROM `suggestions` ORDER BY id DESC;";
 $result = mysqli_query($conn, $query);
 ?>
 
+<?php include "header.php"; ?>
 <body>
 
     <div id="comments" class="container mt-5">

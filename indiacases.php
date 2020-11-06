@@ -1,11 +1,11 @@
-<?php include "header.php"; ?>
+<?php include "config.php"; ?>
 <?php
 if(!isset($_SESSION['username']))
 {
-        header('location:signup.php');
+    header('location:signup.php');
 }
 ?>
-
+<?php include "header.php"; ?>
 <?php
 $data = file_get_contents("https://api.covid19india.org/data.json");
 $coronadata = json_decode($data, true); // true use for associative array from object

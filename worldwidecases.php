@@ -1,4 +1,4 @@
-<?php include "header.php"; ?>  
+<?php include "config.php"; ?>
 <?php
 if(!isset($_SESSION['username']))
 {
@@ -6,6 +6,7 @@ if(!isset($_SESSION['username']))
 }
 ?>
 
+<?php include "header.php"; ?>  
 <?php
 // Main Logic
 

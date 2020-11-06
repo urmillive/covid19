@@ -1,6 +1,5 @@
+<?php include "config.php"; ?>
 <?php
-
-include "config.php";
 
 if (isset($_POST['ilogin'])) {
     $username = $_POST['username'];

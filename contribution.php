@@ -1,4 +1,5 @@
-<?php include "header.php"; ?>
+<?php include "config.php"; ?>
+
 <?php
 if (!isset($_SESSION['username'])) {
     header('location:signup.php');
@@ -26,20 +27,20 @@ $apikey = "rzp_test_ND6O9kA1rtn8eX";
 
 <?php
 if (isset($_POST['save'])) {
-
+    
     $name = $_POST['name'];
     $email = $_POST['email'];
     $mobile = $_POST['mobile'];
     $amount = $_POST['amount'];
     $reason = $_POST['reason'];
-
+    
     // Real Escape String
     $name = mysqli_real_escape_string($conn, $name);
     $email = mysqli_real_escape_string($conn, $email);
     $mobile = mysqli_real_escape_string($conn, $mobile);
     $amount = mysqli_real_escape_string($conn, $amount);
     $reason = mysqli_real_escape_string($conn, $reason);
-
+    
     if ($name == '' || $email == '' || $amount == '' || $reason == '') {
         echo "Please Enter All Data!";
     } else {
@@ -57,6 +58,7 @@ if (isset($_POST['save'])) {
 ?>
 
 
+<?php include "header.php"; ?>
 <div class="container-fluid text-center my-5">
     <div class="row">
         <!-- <div class="col-md-6">

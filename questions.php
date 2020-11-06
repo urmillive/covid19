@@ -1,10 +1,11 @@
-<?php include "header.php"; ?>
+<?php include "config.php"; ?>
 <?php
 if (!isset($_SESSION['username'])) {
   header('location:signup.php');
 }
 ?>
 
+<?php include "header.php"; ?>
 <?php
 $query = "SELECT * FROM `questions`";
 $result = mysqli_query($conn, $query);

@@ -1,4 +1,4 @@
-<?php include "header.php"; ?>
+<?php include "config.php"; ?>
 <?php
 if (!isset($_SESSION['username'])) {
     header('location:signup.php');
@@ -6,23 +6,23 @@ if (!isset($_SESSION['username'])) {
 ?>
 <?php
 if (isset($_POST['contact'])) {
-
+    
     $name = $_POST['name'];
     $email = $_POST['email'];
     $mobile = $_POST['mobile'];
     $reason = $_POST['reason'];
-
+    
     //  Real Escape Streing
-
+    
     $name = mysqli_real_escape_string($conn, $name);
     $email = mysqli_real_escape_string($conn, $email);
     $mobile = mysqli_real_escape_string($conn, $mobile);
     $reason = mysqli_real_escape_string($conn, $reason);
-
+    
     if ($name == '' || $email == '' || $mobile == '' || $reason == '') {
         echo "Please Enter All Data!";
     } else {
-
+        
         $query = "INSERT INTO `contactus` (`id`, `name`, `email`, `mobile`, `reason`) VALUES (NULL, '$name', '$email', '$mobile', '$reason');";
         $result = mysqli_query($conn, $query);
         if ($result) {
@@ -35,6 +35,7 @@ if (isset($_POST['contact'])) {
 
 ?>
 
+<?php include "header.php"; ?>
 <div class="container-fluid text-center my-5">
     <div class="row">
         <!-- <div class="col-md-6">

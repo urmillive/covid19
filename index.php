@@ -1,15 +1,16 @@
-<?php include "header.php"; ?>
-<?php   
+<?php include "config.php"; ?>
+<?php
 if (!isset($_SESSION['username'])) {
     header('location:signup.php');
 } else {
-    ?>
+?>
+    <?php include "header.php"; ?>
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/top.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
 
-    
+
     <div class="hero-v1">
         <div class="container">
             <div class="row align-items-center">
@@ -28,10 +29,10 @@ if (!isset($_SESSION['username'])) {
             </div>
         </div>
     </div>
-    
+
 
     <!--Tag line section-->
-    
+
     <!--tagline section end-->
     <!-- About Section -->
     <div id="bg-about" class="container-fluid text-white py-5">
