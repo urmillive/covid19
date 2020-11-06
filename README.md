@@ -22,18 +22,6 @@ For More my Website https://urmil8989.online/
 
 ![Covid-19 Awareness](Screenshots/04.png/?raw=true "Optional Title")
 
-![Covid-19 Awareness](Screenshots/05.png/?raw=true "Optional Title")
-
-![Covid-19 Awareness](Screenshots/06.png/?raw=true "Optional Title")
-
-![Covid-19 Awareness](Screenshots/07.png/?raw=true "Optional Title")
-
-![Covid-19 Awareness](Screenshots/08.png/?raw=true "Optional Title")
-
-![Covid-19 Awareness](Screenshots/09.png/?raw=true "Optional Title")
-
-![Covid-19 Awareness](Screenshots/10.png/?raw=true "Optional Title")
-
 
 
 For More my Website https://urmil8989.online/

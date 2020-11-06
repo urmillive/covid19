@@ -43,7 +43,7 @@ if (isset($_POST['contact'])) {
         </div> -->
 
         <div class="col-lg-6">
-            <img class="img-fluid" id="" src="./images/svg/contact.svg" alt="Contact me">
+            <img class="img-fluid" id="" src="./images/contact.jpg" alt="Contact me">
         </div>
         
         <div class="col-lg-6">

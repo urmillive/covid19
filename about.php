@@ -3,9 +3,9 @@
 <div class="container-fluid my-5">
   <div class="row">
     <div class="col-lg-6">
-      <img class="img-fluid" id="" src="./images/svg/aboutme.svg" alt="Contact me">
+      <img class="img-fluid" id="" src="./images/svg/developer.svg" alt="Contact me">
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 my-5">
       <div class="accordion" id="accordionExample">
         <div class="card">
           <div class="card-header" id="headingOne">

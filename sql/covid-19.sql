@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 24, 2020 at 07:55 AM
+-- Generation Time: Nov 06, 2020 at 11:29 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -38,28 +38,7 @@ CREATE TABLE `admin_signup` (
 --
 
 INSERT INTO `admin_signup` (`id`, `username`, `password`) VALUES
-(1, 'admin', 'admin'),
-(2, 'urmil', 'urmil');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `answers`
---
-
-CREATE TABLE `answers` (
-  `aid` int(11) NOT NULL,
-  `answer` varchar(255) NOT NULL,
-  `ans_id` int(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `answers`
---
-
-INSERT INTO `answers` (`aid`, `answer`, `ans_id`) VALUES
-(1, 'yes', 1),
-(2, 'No', 1);
+(1, 'admin', 'admin@12');
 
 -- --------------------------------------------------------
 
@@ -74,19 +53,6 @@ CREATE TABLE `client_signup` (
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `client_signup`
---
-
-INSERT INTO `client_signup` (`id`, `name`, `mobile`, `username`, `password`) VALUES
-(1, 'sample', '1231231231', 'sample', 'sampel'),
-(2, 'urmil', '1231231231', 'urmil', '123'),
-(3, 'urmil', '123456789', 'sdfsf', 'sdfsdf'),
-(4, 'chiman', '9979715643', 'chiman', '123123'),
-(5, 'rudra', '9327531470', 'rudra', 'rudra#234'),
-(6, 'Rakesh Savaliya', '9979915615', 'rakesh123', 'rakesh123'),
-(7, 'surya', '9919011558', 'surya', 'surya');
 
 -- --------------------------------------------------------
 
@@ -118,22 +84,13 @@ INSERT INTO `contactus` (`id`, `name`, `email`, `mobile`, `reason`) VALUES
 --
 
 CREATE TABLE `contra` (
-  `id` int(11) NOT NULL,
-  `fname` varchar(255) NOT NULL,
-  `lname` varchar(255) NOT NULL,
-  `username` varchar(255) NOT NULL,
+  `contra_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `city` varchar(255) NOT NULL,
-  `zip` int(255) NOT NULL,
+  `mobile` varchar(255) NOT NULL,
+  `amount` int(255) NOT NULL,
   `reason` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `contra`
---
-
-INSERT INTO `contra` (`id`, `fname`, `lname`, `username`, `email`, `city`, `zip`, `reason`) VALUES
-(1, 'Urmil', 'Rupareliya', 'urmil', 'urmil@gmail.com', 'amreli', 123123, 'hi there');
 
 -- --------------------------------------------------------
 
@@ -176,18 +133,6 @@ CREATE TABLE `suggestions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `suggestions`
---
-
-INSERT INTO `suggestions` (`id`, `post`, `ttmp`, `sname`) VALUES
-(5, 'hi there\r\n', '2020-10-05 09:25:18', 'urmil'),
-(6, 'sdf', '2020-10-05 09:27:37', 'urmil'),
-(7, 'sd', '2020-10-05 10:08:14', 'surya'),
-(8, 'sdf', '2020-10-05 10:21:54', 'surya'),
-(9, 'hello guys', '2020-10-05 10:22:01', 'surya'),
-(10, 'hi need a logo\r\n', '2020-10-05 10:22:37', 'urmil');
-
---
 -- Indexes for dumped tables
 --
 
@@ -196,12 +141,6 @@ INSERT INTO `suggestions` (`id`, `post`, `ttmp`, `sname`) VALUES
 --
 ALTER TABLE `admin_signup`
   ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `answers`
---
-ALTER TABLE `answers`
-  ADD PRIMARY KEY (`aid`);
 
 --
 -- Indexes for table `client_signup`
@@ -219,7 +158,7 @@ ALTER TABLE `contactus`
 -- Indexes for table `contra`
 --
 ALTER TABLE `contra`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`contra_id`);
 
 --
 -- Indexes for table `questions`
@@ -244,16 +183,10 @@ ALTER TABLE `admin_signup`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `answers`
---
-ALTER TABLE `answers`
-  MODIFY `aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
 -- AUTO_INCREMENT for table `client_signup`
 --
 ALTER TABLE `client_signup`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `contactus`
@@ -265,7 +198,7 @@ ALTER TABLE `contactus`
 -- AUTO_INCREMENT for table `contra`
 --
 ALTER TABLE `contra`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `contra_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `questions`
