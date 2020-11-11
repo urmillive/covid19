@@ -42,12 +42,10 @@ $result = mysqli_query($conn, $query);
                             <thead>
                                 <tr>
                                     <th>id</th>
-                                    <th>Fname</th>
-                                    <th>Lname</th>
-                                    <th>Username</th>
+                                    <th>Name</th>
                                     <th>Email</th>
-                                    <th>City</th>
-                                    <th>zip</th>
+                                    <th>Mobile</th>
+                                    <th>Amount</th>
                                     <th>Reason</th>
                                     <th>Delete</th>
                                 </tr>
@@ -55,12 +53,10 @@ $result = mysqli_query($conn, $query);
                             <tfoot>
                                 <tr>
                                     <th>id</th>
-                                    <th>Fname</th>
-                                    <th>Lname</th>
-                                    <th>Username</th>
+                                    <th>Name</th>
                                     <th>Email</th>
-                                    <th>City</th>
-                                    <th>zip</th>
+                                    <th>Mobile</th>
+                                    <th>Amount</th>
                                     <th>Reason</th>
                                     <th>Delete</th>
                                 </tr>
@@ -70,13 +66,11 @@ $result = mysqli_query($conn, $query);
                                 while ($row = mysqli_fetch_assoc($result)) {
                                 ?>
                                     <tr>
-                                        <td><?php echo $row['id']; ?></td>
-                                        <td><?php echo $row['fname']; ?></td>
-                                        <td><?php echo $row['lname']; ?></td>
-                                        <td><?php echo $row['username']; ?></td>
+                                        <td><?php echo $row['contra_id']; ?></td>
+                                        <td><?php echo $row['name']; ?></td>
                                         <td><?php echo $row['email']; ?></td>
-                                        <td><?php echo $row['city']; ?></td>
-                                        <td><?php echo $row['zip']; ?></td>
+                                        <td><?php echo $row['mobile']; ?></td>
+                                        <td><?php echo $row['amount']; ?></td>
                                         <td><?php echo $row['reason']; ?></td>
                                         <td><a href="admin-contribution.php?cdid=<?php echo $row['id']; ?>"><button type="button" class="btn btn-danger">Delete</button></a>
                                     </tr>
