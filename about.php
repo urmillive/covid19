@@ -3,12 +3,13 @@
 <div class="container-fluid my-5">
   <div class="row">
     <div class="col-lg-6">
-      <img class="img-fluid" id="" src="./images/svg/developer.svg" alt="Contact me">
+      <!-- <img class="img-fluid" id="" src="./images/svg/developer.svg" alt="Contact me"> -->
+      <video class="img-fluid" src="images/gif/online-girl-big.webm" autoplay="true"></video>
     </div>
     <div class="col-lg-6 my-5">
       <div class="accordion" id="accordionExample">
         <div class="card">
-          <div class="card-header" id="headingOne">
+          <div class="card-header bg-dark" id="headingOne">
             <h2 class="mb-0">
               <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 What is the motive behind this Site ?
@@ -22,7 +23,7 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-header" id="headingTwo">
+          <div class="card-header bg-dark" id="headingTwo">
             <h2 class="mb-0"> 
               <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 About Website..!
@@ -36,7 +37,7 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-header" id="headingTwo">
+          <div class="card-header bg-dark" id="headingTwo">
             <h2 class="mb-0">
               <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Idea Behind This Website..
@@ -50,7 +51,7 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-header" id="headingThree">
+          <div class="card-header bg-dark" id="headingThree">
             <h2 class="mb-0">
               <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 who is The Developer ?
