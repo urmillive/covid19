@@ -1,6 +1,5 @@
 <?php
 require "config.php";
-include "header.php";
 
 if (isset($_POST['isignup'])) {
 
@@ -39,7 +38,7 @@ if (isset($_POST['isignup'])) {
 
 ?>
 
-
+<?php include "header.php"; ?>
 <link rel="stylesheet" href="css/login.css">
 <div class="row">
 	<div class="col-lg-6">
