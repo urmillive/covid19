@@ -8,10 +8,10 @@ if (!isset($_SESSION['username'])) {
 <?php
 
 if (isset($_POST['post'])) {
-    
+
     $sname = $_SESSION['username'];
     $comment = $_POST['comment'];
-    
+
     // Real Escape String
     $comment = mysqli_real_escape_string($conn, $comment);
     $sname = mysqli_real_escape_string($conn, $sname);
@@ -25,8 +25,9 @@ if (isset($_POST['post'])) {
 $query = "SELECT * FROM `suggestions` ORDER BY id DESC;";
 $result = mysqli_query($conn, $query);
 ?>
-
 <?php include "header.php"; ?>
+
+
 <body>
 
     <div id="comments" class="container mt-5">
@@ -46,7 +47,7 @@ $result = mysqli_query($conn, $query);
                 ?>
                     <div class="my-2">
                         <b><?php echo $row['sname']; ?></b> at <?php echo $row["ttmp"]; ?> says<br>
-                        <?php echo $row['post']; ?>
+                        <?php echo htmlspecialchars($row['post']); ?>
                     </div>
                 <?php
                 }
