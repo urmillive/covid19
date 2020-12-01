@@ -3,8 +3,8 @@
 <div class="container-fluid my-5">
   <div class="row">
     <div class="col-lg-6">
-      <!-- <img class="img-fluid" id="" src="./images/svg/developer.svg" alt="Contact me"> -->
-      <video class="img-fluid" src="images/gif/online-girl-big.webm" autoplay="true"></video>
+      <img class="img-fluid" id="" src="./images/svg/developer.svg" alt="Contact me">
+      <!-- <video class="img-fluid" src="images/gif/online-girl-big.webm" autoplay="true"></video> -->
     </div>
     <div class="col-lg-6 my-5">
       <div class="accordion" id="accordionExample">
