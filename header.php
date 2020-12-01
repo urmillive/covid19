@@ -47,10 +47,10 @@
                     <a class="nav-link" href="./questions.php">Symptom-Checker</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./dailycases.php">India Today</a>
+                    <a class="nav-link" href="./dailycases.php">India-Daily</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./indiacases.php">India-Daily</a>
+                    <a class="nav-link" href="./indiacases.php">India-Cases</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./worldwidecases.php">World-Wide</a>
