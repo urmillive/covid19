@@ -45,6 +45,13 @@ if (isset($_SESSION['success'])) {
     unset($_SESSION['success']);
 }
 ?>
+<script>
+    function myscroll() {
+        var elmnt = document.getElementById("prevent");
+        elmnt.scrollIntoView();
+    }
+</script>
+
 </body>
 
 </html>
