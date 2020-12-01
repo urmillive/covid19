@@ -18,7 +18,7 @@ if (!isset($_SESSION['username'])) {
                     <span class="d-block subheading">Covid-19 Awareness</span>
                     <h1 class="heading mb-3">Stay Safe. Stay Home.</h1>
                     <p class="mb-5">Social distancing is the best medicine for Corona.</p>
-                    <p class="mb-4"><a href="#prevent" class="btn btn-primary">How to prevent</a></p>
+                    <p class="mb-4"><a href="#bg-prevention" class="btn btn-primary">How to prevent</a></p>
                 </div>
                 <div class="col-lg-6">
                     <figure class="illustration">
@@ -115,7 +115,7 @@ if (!isset($_SESSION['username'])) {
     <!-- Symptoms Section End -->
 
     <!-- Prevention Section  -->
-    <div id="bg-prevention" class="container-fluid sub_section py-5 id="prevent">
+    <div id="bg-prevention" class="container-fluid sub_section py-5">
         <div class="section_header text-center mb-5">
             <h1 class="head-text text-white">6 Step Prevention Against CoronaVirus</h1>
         </div>
