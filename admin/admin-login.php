@@ -3,6 +3,10 @@ include "admin-header.php";
 if (isset($_POST['login'])) {
 	$username = $_POST['username'];
 	$password = $_POST['password'];
+
+	$username = mysqli_real_escape_string($conn,$username);
+	$password = mysqli_real_escape_string($conn,$password);
+
 	if ($username != '' && $password != '') {
 		$query = "SELECT * FROM `admin_signup` WHERE `username` ='$username' && `password` = '$password'";
 		$result = mysqli_query($conn, $query);

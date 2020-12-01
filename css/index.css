@@ -4,8 +4,7 @@
 }
 
 body{
-    background: content-box radial-gradient(#CE9FFC,#E2B0FF);
-
+    /* background: content-box radial-gradient(#CE9FFC,#); */
 }
 
 #virus_img {
@@ -13,7 +12,7 @@ body{
 }
 
 #bg-tagline{
-    /*background: linear-gradient(#9F44D3,#FF6644);*/
+    /* background: linear-gradient(#9F44D3,#FF6644); */
     background: linear-gradient(#E2B0FF,#9F44D3);
 }
 #bg-about{
