@@ -28,4 +28,4 @@ For More my Website https://urmil8989.online/
 
 Github : https://github.com/urmil89
 
-Instagram : Coder Urmil
+Instagram : urmil_89
