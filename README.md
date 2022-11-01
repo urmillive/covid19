@@ -10,7 +10,7 @@ https://api.covid19india.org
 https://pomber.github.io/covid19/timeseries.json
 
 
-For More my Website https://urmil8989.online/
+For More visit our Website https://flopcoders.com
 
 ## screenshots
 
